@@ -1,0 +1,144 @@
+
+Python build finished, but the necessary bits to build these modules were not found:
+_dbm               _gdbm              _tkinter
+nis                ossaudiodev        readline
+To find the necessary bits, look in setup.py in detect_modules() for the module's name.
+
+
+Failed to build these modules:
+spwd               
+
+_dbm:
+
+_gdbm:
+
+_tkinter:
+
+ossaudiodev:
+
+readline:
+
+nis: network information system, renamed from yp (Sun yellow pages), not required for standard usage
+
+spwd: shadow password database
+
+syslog: no syslog is available on bb10, compilation fails, ignored
+
+libinstall: compilation failed, might cause problems for modules
+
+
+About
+install python libraries auto. libinstall install automatically all libraries needed for the projet.
+
+
+PYTHONPATH=/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2  LD_LIBRARY_PATH=/berrymuch/work/Python:/root/bbndk/host_10_3_1_12/linux/x86/usr/lib:/root/bbndk/target_10_3_1_995/qnx6/../linux/x86/usr/lib/qt4/lib: \
+        ./hostpython -Wi /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py \
+        -d /accounts/1000/shared/documents/clitools/lib/python3.2 -f \
+        -x 'bad_coding|badsyntax|site-packages|lib2to3/tests/data' \
+        /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2
+Traceback (most recent call last):
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py", line 18, in <module>
+    import struct
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/struct.py", line 12, in <module>
+    from _struct import *
+ImportError: /berrymuch/work/Python/build/lib.linux-x86_64-3.2/_struct.so: cannot open shared object file: No such file or directory
+Makefile:949: recipe for target 'libinstall' failed
+make: [libinstall] Error 1 (ignored)
+
+(...)
+
+PYTHONPATH=/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2 LD_LIBRARY_PATH=/berrymuch/work/Python:/root/bbndk/host_10_3_1_12/linux/x86/usr/lib:/root/bbndk/target_10_3_1_995/qnx6/../linux/x86/usr/lib/qt4/lib: \
+        ./hostpython -Wi -O /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py \
+        -d /accounts/1000/shared/documents/clitools/lib/python3.2 -f \
+        -x 'bad_coding|badsyntax|site-packages|lib2to3/tests/data' \
+        /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2
+Traceback (most recent call last):
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py", line 18, in <module>
+    import struct
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/struct.py", line 12, in <module>
+    from _struct import *
+ImportError: /berrymuch/work/Python/build/lib.linux-x86_64-3.2/_struct.so: cannot open shared object file: No such file or directory
+Makefile:949: recipe for target 'libinstall' failed
+make: [libinstall] Error 1 (ignored)
+
+(...)
+
+PYTHONPATH=/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2  LD_LIBRARY_PATH=/berrymuch/work/Python:/root/bbndk/host_10_3_1_12/linux/x86/usr/lib:/root/bbndk/target_10_3_1_995/qnx6/../linux/x86/usr/lib/qt4/lib: \
+        ./hostpython -Wi /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py \
+        -d /accounts/1000/shared/documents/clitools/lib/python3.2/site-packages -f \
+        -x badsyntax /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/site-packages
+Traceback (most recent call last):
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py", line 18, in <module>
+    import struct
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/struct.py", line 12, in <module>
+    from _struct import *
+ImportError: /berrymuch/work/Python/build/lib.linux-x86_64-3.2/_struct.so: cannot open shared object file: No such file or directory
+Makefile:949: recipe for target 'libinstall' failed
+make: [libinstall] Error 1 (ignored)
+
+(...)
+
+PYTHONPATH=/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2 LD_LIBRARY_PATH=/berrymuch/work/Python:/root/bbndk/host_10_3_1_12/linux/x86/usr/lib:/root/bbndk/target_10_3_1_995/qnx6/../linux/x86/usr/lib/qt4/lib: \
+        ./hostpython -Wi -O /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py \
+        -d /accounts/1000/shared/documents/clitools/lib/python3.2/site-packages -f \
+        -x badsyntax /berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/site-packages
+Traceback (most recent call last):
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/compileall.py", line 18, in <module>
+    import struct
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/struct.py", line 12, in <module>
+    from _struct import *
+ImportError: /berrymuch/work/Python/build/lib.linux-x86_64-3.2/_struct.so: cannot open shared object file: No such file or directory
+Makefile:949: recipe for target 'libinstall' failed
+make: [libinstall] Error 1 (ignored)
+
+(...)
+
+PYTHONPATH=/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2 LD_LIBRARY_PATH=/berrymuch/work/Python:/root/bbndk/host_10_3_1_12/linux/x86/usr/lib:/root/bbndk/target_10_3_1_995/qnx6/../linux/x86/usr/lib/qt4/lib: \
+        ./hostpython -Wi -c "import lib2to3.pygram, lib2to3.patcomp;lib2to3.patcomp.PatternCompiler()"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/lib2to3/pygram.py", line 11, in <module>
+    from .pgen2 import driver
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/lib2to3/pgen2/driver.py", line 21, in <module>
+    import logging
+  File "/berrymuch/work/Python/nto-armv7/accounts/1000/shared/documents/clitools/lib/python3.2/logging/__init__.py", line 26, in <module>
+    import sys, os, time, io, traceback, warnings, weakref
+ImportError: /berrymuch/work/Python/build/lib.linux-x86_64-3.2/time.so: cannot open shared object file: No such file or directory
+Makefile:949: recipe for target 'libinstall' failed
+make: [libinstall] Error 1 (ignored)
+
+(...)
+
+running build_ext
+
+INFO: Can't locate Tcl/Tk libs and/or headers
+
+(...)
+
+building 'spwd' extension
+arm-unknown-nto-qnx8.0.0eabi-gcc -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -D_QNX_SOURCE -DFD_SETSIZE=1024 -fstack-protector-all -g -mthumb -fPIC -IInclude -I/root/bbndk/target_10_3_1_995/qnx6/usr/include -I/berrymuch/work/Python -c /berrymuch/work/Python/Modules/spwdmodule.c -o build/temp.linux-x86_64-3.2/berrymuch/work/Python/Modules/spwdmodule.o
+/berrymuch/work/Python/Modules/spwdmodule.c:70:33: warning: 'struct spwd' declared inside parameter list [enabled by default]
+/berrymuch/work/Python/Modules/spwdmodule.c:70:33: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+/berrymuch/work/Python/Modules/spwdmodule.c: In function 'mkspent':
+/berrymuch/work/Python/Modules/spwdmodule.c:80:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:81:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:82:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:83:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:84:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:85:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:86:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:87:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c:88:5: error: dereferencing pointer to incomplete type
+/berrymuch/work/Python/Modules/spwdmodule.c: In function 'spwd_getspnam':
+/berrymuch/work/Python/Modules/spwdmodule.c:124:5: warning: implicit declaration of function 'getspnam' [-Wimplicit-function-declaration]
+/berrymuch/work/Python/Modules/spwdmodule.c:124:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+/berrymuch/work/Python/Modules/spwdmodule.c:128:5: warning: passing argument 1 of 'mkspent' from incompatible pointer type [enabled by default]
+/berrymuch/work/Python/Modules/spwdmodule.c:70:18: note: expected 'struct spwd *' but argument is of type 'struct spwd *'
+/berrymuch/work/Python/Modules/spwdmodule.c: In function 'spwd_getspall':
+/berrymuch/work/Python/Modules/spwdmodule.c:151:5: warning: implicit declaration of function 'setspent' [-Wimplicit-function-declaration]
+/berrymuch/work/Python/Modules/spwdmodule.c:152:5: warning: implicit declaration of function 'getspent' [-Wimplicit-function-declaration]
+/berrymuch/work/Python/Modules/spwdmodule.c:152:15: warning: assignment makes pointer from integer without a cast [enabled by default]
+/berrymuch/work/Python/Modules/spwdmodule.c:153:9: warning: passing argument 1 of 'mkspent' from incompatible pointer type [enabled by default]
+/berrymuch/work/Python/Modules/spwdmodule.c:70:18: note: expected 'struct spwd *' but argument is of type 'struct spwd *'
+/berrymuch/work/Python/Modules/spwdmodule.c:157:13: warning: implicit declaration of function 'endspent' [-Wimplicit-function-declaration]
+
